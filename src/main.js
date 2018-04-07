@@ -1,8 +1,8 @@
-const sum = (num1, num2) => num1 + num2;
-const sub = (num1, num2) => num1 - num2;
-const mult = (num1, num2) => num1 * num2;
-const div = function div(num1, num2) {
-  return (num2 === 0) ? 'We can\'t division by 0' : num1 / num2;
+const FizzBuzz = num => {
+  if(num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+  if(num % 3 === 0) return 'Fizz';
+  if(num % 5 === 0) return 'Buzz';
+  return num;
 };
 
-export { sum, sub, mult, div };
+export default FizzBuzz;
